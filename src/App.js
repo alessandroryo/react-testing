@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import CompAxiosCall from "./CompAxiosCall";
+import CompRole from "./CompRole";
+import CompUserEvent from "./CompUserEvent";
+import CompVariant from "./CompVariant";
+import SampleCompRTL from "./SampleCompRTL";
+import ShowHide from "./ShowHide";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <SampleCompRTL />
+      <ShowHide />
+      <CompRole />
+      <CompVariant />
+      <CompUserEvent />
+      <CompAxiosCall />
+    </>
   );
 }
 
