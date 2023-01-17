@@ -4,7 +4,9 @@ on:
   push:
     branches: 
       - 'main'
-      - 'development'
+      - 'develop'
+      - 'feature/**'
+      - 'hotfix/**'
 jobs:
   build:
     runs-on: ubuntu-latest
