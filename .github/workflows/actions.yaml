@@ -4,10 +4,11 @@ on:
   push:
     branches: 
       - 'main'
-      - 'development'
+      - 'develop'
+      - 'feature/**'
+      - 'hotfix/**'
 jobs:
   build:
-    name: React Unit Test and Integration Test
     runs-on: ubuntu-latest
     timeout-minutes: 2
     strategy:
@@ -17,9 +18,15 @@ jobs:
     steps:
     - name: 👋🏻 Setup Repository
       uses: actions/checkout@v3
+    
+    - name: 📗 Use Node.JS
+      uses: actions/setup-node@v3
 
     - name: 📦 Clean & Install Dependencies
       run: npm ci
+
+    - name: ⚒ Build App
+      run: npm run build --if-present
 
     - name: ⚡️ Run Tests
       run: npm run test
