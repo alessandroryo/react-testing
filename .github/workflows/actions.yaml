@@ -10,7 +10,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 2
     strategy:
       matrix:
         node-version: [16.x]
@@ -27,6 +26,7 @@ jobs:
     - name: 👮 Lint Code Base
       uses: github/super-linter@v4
       env:
+        VALIDATE_ALL_CODEBASE: true
         VALIDATE_JAVASCRIPT_ES: true
         VALIDATE_JAVASCRIPT_STANDARD: true
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
