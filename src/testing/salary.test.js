@@ -1,4 +1,4 @@
-import { salaryAfterTax, greeting } from "../helpers/salary";
+import { salaryAfterTax, greeting } from "../helpers/salary"
 
 describe("String", () => {
   test("Find out the net salary", () => {

@@ -1,7 +1,7 @@
-import { render, screen } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
-import App from "../App";
-import CompUserEvent from "../CompUserEvent";
+import { render, screen } from "@testing-library/react"
+import userEvent from "@testing-library/user-event"
+import App from "../App"
+import CompUserEvent from "../CompUserEvent"
 
 const MOCK_SUBMIT_BUTTON = jest.fn();
 

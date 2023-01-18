@@ -1,4 +1,4 @@
-import { sum, mult } from "../helpers/math";
+import { sum, mult } from "../helpers/math"
 
 describe("Basic testing", () => {
   it("Testing - Basic", () => {

@@ -1,6 +1,6 @@
-import { render, screen } from "@testing-library/react";
-import App from "../App";
-import { data } from "../CompVariant";
+import { render, screen } from "@testing-library/react"
+import App from "../App"
+import { data } from "../CompVariant"
 
 test("Testing queryBy and findBy", async () => {
   render(<App />);

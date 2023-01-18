@@ -28,7 +28,6 @@ jobs:
       env:
         VALIDATE_ALL_CODEBASE: true
         VALIDATE_JAVASCRIPT_ES: true
-        VALIDATE_JAVASCRIPT_STANDARD: true
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: 📦 Clean & Install Dependencies

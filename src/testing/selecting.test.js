@@ -1,5 +1,5 @@
-import { fireEvent, render, screen } from "@testing-library/react";
-import App from "../App";
+import { fireEvent, render, screen } from "@testing-library/react"
+import App from "../App"
 
 describe("Testing select elements and expect the value", () => {
   test("Check rendered text is true", () => {
